@@ -1,0 +1,114 @@
+.team{
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: $bcg-color;
+    }
+
+    .team-head {
+        @media screen and (min-width: 1170px){
+        margin-bottom: 50px;
+        
+        }
+
+        @media screen and (min-width: 480px) {
+            margin-bottom:30px;
+            padding-top: 60px;
+            
+        }
+    }
+
+    .team-list{
+
+        .item{
+    text-align: center;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+    &:last-child{
+        margin-right: 0px;
+    }
+
+
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        width: 100%;
+        height: 482px;
+    }
+
+    @media screen and (min-width: 1170px) {
+        width: calc((100% - 90px) / 3);
+        margin-right: 30px;
+    }
+}
+    }
+
+    .item-logo{
+        margin-bottom: 30px;
+        
+        // display: inline-block;
+    }
+
+    .name{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .name-description{
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    .link-elems{
+        margin-right: 10px;
+        width: calc((100% - 30px) / 4);
+    }
+
+    .social-network{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        color: $icon-fill;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        .link-elems &:last-child{
+            margin-right: 0px;
+        }
+
+        &:hover,
+        &:focus{
+            background-color: $accent-color;
+            color: $primary-color-white;
+        }  
+    }
+
+    .network{
+        max-height: 22px;
+    }
+
+    .icon-network{
+        fill: currentColor;   
+    }
+    
+    .social-links{
+        display: flex;
+        align-content: center;
+        margin-bottom: 24px;
+        padding-right: 32px;
+        padding-left: 32px;
+
+
+        @media screen and (min-width: 480px) {
+            padding-left: 122px;
+            padding-right: 122px;
+            
+        }
+    }

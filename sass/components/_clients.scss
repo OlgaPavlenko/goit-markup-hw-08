@@ -1,0 +1,139 @@
+.clients {
+    padding-bottom: 94px;
+    
+    @media screen and (min-width: 1170px) {
+        margin-bottom: 50px;
+    }
+ }
+
+ .clients-head{
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    
+ }
+
+ .clients-list{
+    
+
+  .item{
+      
+    @media screen and (min-width: 480px){
+        width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+
+    &:nth-child(2n){
+        margin-right: 0px;
+    }
+        
+    }
+  }
+    
+    @media screen and (min-width: 1170px) {
+        .item + .item{
+            justify-content: space-between;
+            margin-left: 30px;
+        }
+    }
+    
+}
+
+.client-wrapper{
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    text-align: center;
+    @media screen and (min-width: 1170px) {
+        min-width: 170px;
+    }
+}
+
+.btn-client{
+    color: $icon-fill;
+    border: 1px solid $icon-fill;
+    // box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus{
+        border-color: $accent-color;
+    }
+
+    .client1{
+
+        
+        @media screen and (max-width: 767px){
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        @media screen and (min-width: 1170px){
+        padding: 20px 62.73px 20.77px 63px;
+    }
+    }
+
+    .client2{
+        @media screen and (min-width: 480px){
+            padding-top: 19px;
+            padding-bottom: 19px;
+        }
+
+        @media screen and (min-width: 1170px){
+        padding: 19px 65px 19px 65px;
+    }
+    }
+
+    .client3{
+        @media screen and (min-width: 480px){
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        @media screen and (min-width: 1170px){
+        padding: 24px 64px 23.4px 65px;
+    }
+    }
+
+    .client4{
+
+        @media screen and (min-width: 480px){
+            padding-top: 24px;
+            padding-bottom: 24px;
+        } 
+
+        @media screen and (min-width: 1170px){
+        padding: 24px 45.34px 23.98px 45px;
+    }
+    }
+
+   .client5{
+    @media screen and (min-width: 480px){
+        padding-top: 22px;
+        padding-bottom: 21px;
+    } 
+
+    @media screen and (min-width: 1170px){
+        padding: 22px 55px 21px 56px;
+    }
+    }
+
+    .client6{
+        @media screen and (min-width: 480px){
+            padding-top: 22px;
+            padding-bottom: 22px;
+        }
+
+        @media screen and (min-width: 1170px){
+        padding: 22px 40.52px 22.56px 41px;
+    }
+    }
+}
+
+.icon-client{
+    fill: currentColor;
+}

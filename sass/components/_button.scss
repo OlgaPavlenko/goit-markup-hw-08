@@ -1,0 +1,31 @@
+.button{
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: $primary-color-white;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus
+    {
+        color: $primary-color-white;
+    }
+
+    .portfolio{
+        padding: 0;
+        background-color: $bcg-color;
+        color: $basic-color;
+    }
+
+    &.portfolio:hover,
+    &.portfolio:focus{
+        background-color: $accent-color;
+        color: $primary-color-white;
+    }
+}

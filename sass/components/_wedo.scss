@@ -1,0 +1,39 @@
+.wedo{
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1169px){
+        display: none;
+    }
+}
+
+.wedo-descr{
+    margin-bottom: 50px;
+}
+
+.wwedo {
+
+    .item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+
+    &:nth-child(3n){
+        margin-right: 0px;
+    }
+         }
+} 
+
+.parent{
+    position: relative;
+}
+
+.item-descr{
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    
+    width: 100%;
+    color: $primary-color-white;
+    text-align: center;
+    background-color: $wedo-background-color;
+}

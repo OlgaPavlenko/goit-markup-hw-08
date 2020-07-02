@@ -1,0 +1,152 @@
+.footer{
+    background-color: #2F303A;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 48px;
+}
+
+.footer-color{
+    color: $contacts-footer-color;
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 9px;
+}
+
+.footer-address{
+    color: $primary-color-white;
+}
+
+.footer-contact{
+    padding-bottom: 19px;
+    font-size: 14px;
+    line-height: 1.71;
+
+    .item{
+        margin-bottom: 9px;
+    }
+}
+
+b{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $primary-color-white;
+    text-transform: uppercase;
+}
+
+.footer-join{
+    display: block;
+    margin-bottom: 21px;
+}
+
+.join {
+    .social-links{
+        padding-left: 0px;
+        margin-bottom: 0px;
+       }
+
+       .link-elems{
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+    }  
+
+    .social-network {
+        color: $primary-color-white;
+    }
+}
+
+.footer-page {
+    .subscription {
+        width: 570px;
+      }
+}
+
+.subscription {
+    .form {
+        flex-direction: column;
+        position: relative;
+      }
+
+      .join-in {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $primary-color-white;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .button {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-weight: 900;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 29px;
+        padding-right: 28px;
+      
+        overflow: hidden;
+        border: 0em;
+      }
+}
+
+.form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: #2f303a;
+    padding-left: 12px;
+
+   }
+
+   .join-inline {
+    input{
+        margin-right: 12px;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background-color: #2f303a;
+        padding-left: 12px;
+        color: $bcg-color;
+      }
+   }
+
+   .icon-send {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translatey(-50%);
+    }
+
+    .copyrite{
+        display: block;
+        padding-bottom: 21px;
+        padding-top: 18px;
+        color: $footer-copiright;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
+        font-size: 12px;
+        line-height: 2;
+        text-align: center;
+    }
+   
