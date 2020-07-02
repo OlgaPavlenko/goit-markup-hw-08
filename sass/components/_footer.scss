@@ -1,12 +1,21 @@
 .footer{
     background-color: #2F303A;
+
+    @media screen and (min-width: 480px){
+        text-align: center;
+    }
+    
 }
 
 .footer-menu{
-    display: flex;
+    
     justify-content: space-between;
     align-items: baseline;
     padding-top: 48px;
+
+    @media screen and (min-width: 1170px){
+        display: flex; 
+    }
 }
 
 .footer-color{
@@ -50,15 +59,24 @@ b{
     .social-links{
         padding-left: 0px;
         margin-bottom: 0px;
+
+        @media screen and (min-width: 480px){
+            padding-left: 137px;
+        }
        }
 
        .link-elems{
+           
         background: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
     }  
 
     .social-network {
         color: $primary-color-white;
+    }
+
+    @media screen and (min-width: 480px){
+        padding-bottom: 60px;
     }
 }
 
@@ -101,6 +119,11 @@ b{
       
         overflow: hidden;
         border: 0em;
+
+        @media screen and (min-width: 480px){
+            bottom: 60px;
+            left: 120px;
+        }
       }
 }
 
@@ -119,7 +142,7 @@ b{
    .join-inline {
     input{
         margin-right: 12px;
-        width: 358px;
+       
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-sizing: border-box;
@@ -128,6 +151,15 @@ b{
         background-color: #2f303a;
         padding-left: 12px;
         color: $bcg-color;
+
+        @media screen and (min-width: 480px){
+            width: 100%;
+            margin-bottom: 130px;
+        }
+    
+        @media screen and (min-width: 1170px){
+            width: 358px;
+        }
       }
    }
 
@@ -148,5 +180,9 @@ b{
         font-size: 12px;
         line-height: 2;
         text-align: center;
+
+        @media screen and (max-width: 1169px){
+            display: none;
+        }
     }
    

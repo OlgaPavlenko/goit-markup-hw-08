@@ -832,7 +832,7 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients-list .item {
     width: calc((100% - 60px) / 2);
     margin-right: 30px;
@@ -957,5 +957,214 @@ p {
 
 .icon-client {
   fill: currentColor;
+}
+
+.footer {
+  background-color: #2F303A;
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+.footer-menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 48px;
+}
+
+@media screen and (min-width: 1170px) {
+  .footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footer-color {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-address {
+  color: #FFFFFF;
+}
+
+.footer-contact {
+  padding-bottom: 19px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-contact .item {
+  margin-bottom: 9px;
+}
+
+b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer-join {
+  display: block;
+  margin-bottom: 21px;
+}
+
+.join .social-links {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .join .social-links {
+    padding-left: 137px;
+  }
+}
+
+.join .link-elems {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join .social-network {
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 480px) {
+  .join {
+    padding-bottom: 60px;
+  }
+}
+
+.footer-page .subscription {
+  width: 570px;
+}
+
+.subscription .form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.subscription .join-in {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subscription .button {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  overflow: hidden;
+  border: 0em;
+}
+
+@media screen and (min-width: 480px) {
+  .subscription .button {
+    bottom: 60px;
+    left: 120px;
+  }
+}
+
+.form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 12px;
+}
+
+.join-inline input {
+  margin-right: 12px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 12px;
+  color: #F5F4FA;
+}
+
+@media screen and (min-width: 480px) {
+  .join-inline input {
+    width: 100%;
+    margin-bottom: 130px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .join-inline input {
+    width: 358px;
+  }
+}
+
+.icon-send {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
+.copyrite {
+  display: block;
+  padding-bottom: 21px;
+  padding-top: 18px;
+  color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 1169px) {
+  .copyrite {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
