@@ -17,20 +17,11 @@
         <div class="container">
             <nav class="header__nav">
                 <a href="" class="header-logo"><span>Web</span> Studio</a>
-
-                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
-                    data-menu-button>
-                    <svg width="40" height="40" aria-label="mobile menu switcher">
-                        <use class="icon-burger" href="./images/svg/symbol-defs-burger.svg#menu_burger"></use>
-                        <use class="icon-cross" href="./images/svg/symbol-defs-burger.svg#close_burger"></use>
-                    </svg>
-                </button>
-
                 <div class="menu-container" id="menu-container" data-menu>
                     <ul class="site-nav">
-                        <li class="item "><a class="current" href="#">Студия</a></li>
-                        <li class="item"><a href="./portfolio.html">Портфолио</a></li>
-                        <li class="item"><a href="#">Контакты</a></li>
+                        <li class="item "><a class="link current" href="#">Студия</a></li>
+                        <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="item"><a class="link" href="#">Контакты</a></li>
                     </ul>
 
                     <ul class="header-contact">
@@ -50,6 +41,13 @@
                         </li>
                     </ul>
                 </div>
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="mobile menu switcher">
+                        <use class="icon-burger" href="./images/svg/symbol-defs-burger.svg#menu_burger"></use>
+                        <use class="icon-cross" href="./images/svg/symbol-defs-burger.svg#close_burger"></use>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>
@@ -485,9 +483,10 @@
             <label class="checkbox link" for="policy">
                 <input class="checkbox-form" type="checkbox" name="policy" id="policy" />
                 <span class="checkbox-icon"></span>
-                Согласен с рассылкой и принимаю
-                <a class="checkbox-link" href="./index.html">
-                    Условия договора</a>
+                <span class="checkbox-policy">Соглашаюсь с рассылкой и принимаю
+                    <a class="checkbox-link" href="./index.html">
+                        Условия договора</a>
+                </span>
             </label>
 
             <div class="button-submit">
