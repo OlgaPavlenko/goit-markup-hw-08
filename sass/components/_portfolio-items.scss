@@ -18,6 +18,11 @@ a{
   .portfolio{
     background-color: $bcg-color;
     color: $basic-color;
+    @media screen and (max-width: 767px){
+        margin-right: 8px;
+        margin-bottom: 15px;
+      }
+    
 }
 
 .filter {
@@ -25,14 +30,17 @@ a{
     margin-bottom: 50px;
 }
 
+.filter-btns{
+    @media screen and (max-width: 767px){
+        text-align: left;
+      }
+}
+
 .filter-item{
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-
+    
     .item  {
-        width: calc((100% - 60px) / 3);
-        margin-right: 30px;
+        
         margin-bottom: 30px;
 
         &:nth-child(3n)  {
@@ -47,6 +55,22 @@ a{
         opacity: 1;
             }
           }
+
+          @media screen and (min-width: 1200px){
+            width: calc((100% - 60px) / 3);
+            margin-right: 30px;
+            
+          }
+      }
+
+      @media screen and (max-width: 767px){
+          
+      }
+
+      @media screen and (min-width: 1200px){
+        display: flex;
+        flex-wrap: wrap;
+
       }
 }
 
