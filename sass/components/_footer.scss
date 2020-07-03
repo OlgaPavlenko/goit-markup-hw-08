@@ -9,16 +9,19 @@
 
 .footer-menu{
     
-    justify-content: space-between;
-    align-items: baseline;
-    
-
-    @media screen and (min-width: 1200px){
-        display: flex; 
-        padding-top: 48px;
+    padding-top: 65px;
+    text-align: center;
+  
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
-    @media screen and (max-width: 767px){
-        padding-top: 60px;
+  
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
 }
 
@@ -160,8 +163,12 @@ b{
         @media screen and (max-width: 767px){
             width: 100%;
             margin-bottom: 130px;
-            
         }
+        @media screen and (min-width: 768px){
+            width: 450px;
+            margin-bottom: 20px;
+        }
+        
       }
       @media screen and (min-width: 1200px){
         width: 358px;

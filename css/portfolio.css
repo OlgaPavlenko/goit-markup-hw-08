@@ -54,9 +54,9 @@ ul {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -166,12 +166,10 @@ a {
   position: relative;
 }
 
-.filter-item .item {
-  margin-bottom: 30px;
-}
-
-.filter-item .item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (max-width: 767px) {
+  .filter-item .item {
+    margin-bottom: 30px;
+  }
 }
 
 .filter-item .item:hover .product::before,
@@ -182,14 +180,29 @@ a {
   opacity: 1;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filter-item .item {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 2);
     margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .filter-item .item:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .filter-item .item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .filter-item .item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .filter-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -212,6 +225,9 @@ a {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   z-index: 10;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .card-content::after {

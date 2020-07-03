@@ -40,13 +40,10 @@ a{
     position: relative;
     
     .item  {
-        
+
+      @media screen and (max-width: 767px){
         margin-bottom: 30px;
-
-        &:nth-child(3n)  {
-            margin-right: 0px; 
-          }
-
+      }
           &:hover{
             .product::before,
             .project-descr,
@@ -56,23 +53,36 @@ a{
             }
           }
 
+          @media screen and (min-width: 768px){
+            width: calc((100% - 60px) / 2);
+            margin-right: 30px;
+            margin-bottom: 30px;
+            &:nth-child(2n){
+              margin-right: 0px;
+          }
+
+          }
+
           @media screen and (min-width: 1200px){
             width: calc((100% - 60px) / 3);
             margin-right: 30px;
-            
+            margin-bottom: 30px;
+
+        &:nth-child(3n)  {
+            margin-right: 0px; 
+          }
           }
       }
 
-      @media screen and (max-width: 767px){
-          
-      }
+     
 
-      @media screen and (min-width: 1200px){
+      @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: wrap;
 
       }
 }
+
 
 .card-content{
     position: relative;
@@ -88,7 +98,7 @@ a{
     border-bottom-left-radius: 5px;  
     
     z-index: 10;
-
+    flex-grow: 1;
     &::after{
         display: block;
         position: absolute;
@@ -123,6 +133,7 @@ a{
      .product{
          position: relative;
          overflow: hidden;
+         
 
          &::before{
             display: block;
