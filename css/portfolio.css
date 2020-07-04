@@ -180,7 +180,7 @@ a {
   opacity: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .filter-item .item {
     width: calc((100% - 60px) / 2);
     margin-right: 30px;
