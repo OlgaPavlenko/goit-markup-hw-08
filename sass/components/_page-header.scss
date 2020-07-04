@@ -4,7 +4,9 @@
 }
 
 .header{
+    @media screen and (max-width: 767px){
     position: relative;
+}
 }
 
 .header__nav{
@@ -35,10 +37,13 @@
 
 .site-nav,
 .header-contact {
-    a {
+a {
 display: block;
-// padding-top: 32px;
-// padding-bottom: 32px;
+
+@media screen and (min-width: 1200px){
+padding-top: 32px;
+padding-bottom: 32px;
+}
     }
 }
 
@@ -54,9 +59,12 @@ display: block;
         span {
             color: $accent-color;
         }
-        @media screen and (min-width: 768px) and (max-width: 1199px){
+        @media screen and (min-width: 768px){
         margin-right: 81px;
         }
+        @media screen and (min-width: 1200px){
+            margin-right: 86px;
+            }
 }
 
 .menu-button{
@@ -89,8 +97,6 @@ display: block;
 }
 
 .site-nav {
-    
-
    & .item:not(:last-child) {
     @media screen and (min-width: 1200px){
         margin-right: 50px;
@@ -109,10 +115,11 @@ display: block;
             display: flex;
             justify-content: space-between
             ;
-            
-
         }
-        
+
+        @media screen and (min-width: 480px){
+            padding-top: 60px;
+        }
 }
 
 .link {
@@ -132,14 +139,18 @@ display: block;
 
 .link.current::after {
     content: "";
-    position: absolute; 
-    bottom: -8px;
-    left: 0; 
-    
+  position: absolute; 
+  bottom: -8px;
+  left: 0; 
   background-color: $accent-color;
   width: 100%;
   height: 4px;
   border-radius: 2px;
+
+  @media screen and (min-width: 1200px){
+    bottom: 0;
+    height: 2px;
+  }
 }
 
 .header-contact{
@@ -151,8 +162,10 @@ display: block;
 
     .mail,
     .phone {
-        // display: flex;
+        @media screen and (min-width: 1200px){
+        display: flex;
         align-items: center;
+    }
     }
 
     & .item:not(:last-child){
@@ -176,14 +189,20 @@ display: block;
         font-size: 12px;
         line-height: 1.17;
     }
+
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
 }
 
 nav {
     li{
         font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -199,8 +218,6 @@ a{
     &:focus {
         color: $accent-color;
     }
-
-    
 }
 
 p{

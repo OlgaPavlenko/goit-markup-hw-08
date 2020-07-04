@@ -2,10 +2,14 @@
     padding-bottom: 60px;
     margin-bottom: 60px;
     background-color: $bcg-color;
+
+    @media screen and (min-width: 1200px){
+        padding-bottom: 94px;
+    }
     }
 
     .team-head {
-        @media screen and (min-width: 1170px){
+        @media screen and (min-width: 1200px){
         margin-bottom: 50px;
         
         }
@@ -36,7 +40,7 @@
         height: 482px;
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         width: calc((100% - 60px) / 2);
         margin-right: 30px;
         margin-bottom: 30px;
@@ -47,14 +51,22 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 90px) / 3);
+        width: calc((100% - 120px) / 4);
         margin-right: 30px;
+
+        &:last-child{
+            margin-right: 0px;
+        }
     }
 }
 
 @media screen and (min-width: 768px){
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px){
+    display: flex;
 }
     }
 
@@ -118,8 +130,7 @@
         display: flex;
         align-content: center;
         margin-bottom: 24px;
-        padding-right: 32px;
-        padding-left: 32px;
+        
 
 
         @media screen and (min-width: 480px){
@@ -128,9 +139,14 @@
             
         }
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             padding-left: 74px;
             padding-right: 74px;
             
+        }
+
+        @media screen and (min-width: 1200px){
+            padding-right: 32px;
+        padding-left: 32px;
         }
     }
